@@ -3,18 +3,18 @@ import React, { useState } from "react";
 const Questions = ({ question, selected }) => {
   const [answer, setAnswer] = useState(question["options"]);
   return (
-    <div className="row">
+    <div className="row  p-2">
       <div className="col-12">{question["title"]}</div>
-      {answer.map((text, index) => (
+      {answer.map((option, index) => (
         <button
           key={index}
           className="col-2 m-2 btn btn-primary"
           onClick={() => {
-            setAnswer([text]);
-            selected(text);
+            setAnswer([option]);
+            selected(option);
           }}
         >
-          {text}
+          {option}
         </button>
       ))}
     </div>

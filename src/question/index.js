@@ -16,34 +16,7 @@ const questions = [
     options: ["anand", "tarun", "ankita", "rahul"],
     correct: "tarun",
     id: "2"
-  },
-  {
-    title: "My Name is ?",
-    img: "",
-    video: "",
-    explaination: "",
-    options: ["anand", "tarun", "ankita", "rahul"],
-    correct: "tarun",
-    id: "3"
   }
-  // {
-  //   title: "My Name is ?",
-  //   img: "",
-  //   video: "",
-  //   explaination: "",
-  //   options: ["anand", "tarun", "ankita", "rahul"],
-  //   correct: "tarun",
-  //   id: "4"
-  // },
-  // {
-  //   title: "My Name is ?",
-  //   img: "",
-  //   video: "",
-  //   explaination: "",
-  //   options: ["anand", "tarun", "ankita", "rahul"],
-  //   correct: "tarun",
-  //   id: "5"
-  // }
 ];
 
 // n = 5 to export 5 question
