@@ -24,7 +24,7 @@ const questions = [
     explaination: "",
     options: ["Indian", "African", "American", "Tanzanian"],
     correct: "Indian",
-    id: "2"
+    id: "3"
   }
 ];
 

@@ -15,20 +15,17 @@ class Quiz extends Component {
     };
   }
 
-  // Function to get question from ./question
   getQuestions = () => {
     questionService().then(question => {
       this.setState({ questionBank: question });
     });
   };
 
-  // Set state back to default and call function
   startAgain = () => {
     this.getQuestions();
     this.setState({ score: 0, responses: 0 });
   };
 
-  // Function to compute scores
   computeAnswer = (answer, correctAns) => {
     if (answer === correctAns) {
       this.setState({
@@ -40,7 +37,6 @@ class Quiz extends Component {
     });
   };
 
-  // componentDidMount function to get question
   componentDidMount() {
     this.getQuestions();
   }
