@@ -1,6 +1,6 @@
 const questions = [
   {
-    title: "My Name is ?",
+    title: "My Name is _______ ?",
     img: "",
     video: "",
     explaination: "",
@@ -9,16 +9,23 @@ const questions = [
     id: "1"
   },
   {
-    title: "My Name is ?",
+    title: "I am 30 Years old?",
     img: "",
     video: "",
     explaination: "",
-    options: ["anand", "tarun", "ankita", "rahul"],
-    correct: "tarun",
+    options: ["true", "false"],
+    correct: "true",
+    id: "2"
+  },
+  {
+    title: "My Nationality is?",
+    img: "",
+    video: "",
+    explaination: "",
+    options: ["Indian", "African", "American", "Tanzanian"],
+    correct: "Indian",
     id: "2"
   }
 ];
 
-// n = 5 to export 5 question
-export default (n = 5) =>
-  Promise.resolve(questions.sort(() => 0.5 - Math.random()).slice(0, n));
+export default () => Promise.resolve(questions);
