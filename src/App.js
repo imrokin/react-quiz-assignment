@@ -2,23 +2,34 @@ import React from "react";
 import "./style.css";
 
 import { useSelector, useDispatch } from "react-redux";
-import { submit } from "./actions";
+import { submit, elapse } from "./actions";
 
 import Question from "./components/Question";
 import Result from "./components/Result";
 
 const Quiz = () => {
+  const dispatch = useDispatch();
   const questionBank = useSelector(state => state.question);
   const score = useSelector(state => state.score);
   const submited = useSelector(state => state.submited);
+  const time = useSelector(state => state.time);
 
-  const dispatch = useDispatch();
+  if (time > 0) {
+    setTimeout(() => dispatch(elapse()), 1000);
+  }
+
+  if (time == 0) {
+    dispatch(submit());
+  }
 
   return (
     <div className="container-fluid">
+      <div className="row">
+        <div className="col-12">{time}s Left</div>
+      </div>
       {questionBank.length &&
         questionBank.map((question, index) => (
-          <Question question={question} key={index} />
+          <Question question={question} qIndex={index} key={index} />
         ))}
 
       {submited ? (

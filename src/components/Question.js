@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { increment } from "../actions";
+import { increment, response } from "../actions";
 
-const Questions = ({ question }) => {
+const Questions = ({ question, qIndex }) => {
   const dispatch = useDispatch();
   return (
     <div className="row  p-2">
@@ -15,6 +15,7 @@ const Questions = ({ question }) => {
             if (option == question["correct"]) {
               dispatch(increment());
             }
+            dispatch(response({ index: qIndex, option: option }));
           }}
         >
           {option}
