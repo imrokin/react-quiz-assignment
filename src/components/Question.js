@@ -2,15 +2,32 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, response } from "../actions";
 
+import Videojs from "../Video.js";
+
 const Questions = ({ question, qIndex }) => {
   const dispatch = useDispatch();
   const submited = useSelector(state => state.submited);
+
+  const videoJsOptions = {
+    autoplay: false,
+    playbackRates: [0.5, 1, 1.25, 1.5, 2],
+    width: 720,
+    height: 300,
+    controls: true,
+    sources: [
+      {
+        src: question["video"],
+        type: "video/mp4"
+      }
+    ]
+  };
 
   return (
     <div className="row  p-2">
       <div className="col-12 d-flex flex-column align-items-start">
         {question["title"]}
         <img className="my-1" src={question["img"]} />
+        <Videojs className="w-100" {...videoJsOptions} />
         {submited ? (
           <span className="alert alert-warning my-1">
             {question["explaination"]}
