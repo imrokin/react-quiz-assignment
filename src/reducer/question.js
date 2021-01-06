@@ -1,6 +1,7 @@
 const questions = [
   {
     title: "My Name is _______ ?",
+    content: "More Question text",
     img: "https://via.placeholder.com/350x150",
     video: "",
     explaination: "Some explaination",
@@ -10,6 +11,7 @@ const questions = [
   },
   {
     title: "I am 30 Years old?",
+    content: "More Question text",
     img: "",
     video: "https://vjs.zencdn.net/v/oceans.mp4",
     explaination: "Some explaination",
@@ -19,6 +21,7 @@ const questions = [
   },
   {
     title: "My Nationality is?",
+    content: "More Question text",
     img: "",
     video: "",
     explaination: "Some explaination",

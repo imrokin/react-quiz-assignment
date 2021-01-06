@@ -23,11 +23,13 @@ const Quiz = () => {
   }
 
   return (
-    <div className="container-fluid card">
+    <div className="container-fluid mt-5 pt-5">
       {submited ? null : (
-        <div className="row">
-          <div className="col-12 d-flex justify-content-end">{time}s Left</div>
-        </div>
+        <nav class="navbar fixed-top navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            Time Left : {time}s
+          </a>
+        </nav>
       )}
       {questionBank.length &&
         questionBank.map((question, index) => (

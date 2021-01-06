@@ -23,9 +23,10 @@ const Questions = ({ question, qIndex }) => {
   };
 
   return (
-    <div className="row  p-2">
-      <div className="col-12 d-flex flex-column align-items-start">
-        {question["title"]}
+    <div className="row  p-2 border-bottom">
+      <div className="col-12 d-flex flex-column align-items-start ">
+        <span>{question["title"]}</span>
+        <span>{question["content"]}</span>
         <img className="my-1" src={question["img"]} />
         {question["video"] ? (
           <Videojs className="w-100" {...videoJsOptions} />
