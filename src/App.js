@@ -23,9 +23,9 @@ const Quiz = () => {
   }
 
   return (
-    <div className="container-fluid mt-5 pt-5">
+    <div className="container-fluid card my-5 py-5">
       {submited ? null : (
-        <nav class="navbar fixed-top navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-light bg-light d-flex justify-content-center">
           <a class="navbar-brand" href="#">
             Time Left : {time}s
           </a>
@@ -39,14 +39,16 @@ const Quiz = () => {
       {submited ? (
         <Result score={score} />
       ) : (
-        <button
-          className="btn btn-success m-2"
-          onClick={() => {
-            dispatch(submit());
-          }}
-        >
-          Submit
-        </button>
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+          <button
+            className="btn btn-success w-100 m-2"
+            onClick={() => {
+              dispatch(submit());
+            }}
+          >
+            Submit
+          </button>
+        </nav>
       )}
     </div>
   );

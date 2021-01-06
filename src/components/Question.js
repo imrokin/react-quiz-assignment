@@ -25,7 +25,9 @@ const Questions = ({ question, qIndex }) => {
   return (
     <div className="row  p-2 border-bottom">
       <div className="col-12 d-flex flex-column align-items-start ">
-        <span>{question["title"]}</span>
+        <h4>
+          Q {qIndex + 1}. {question["title"]}
+        </h4>
         <span>{question["content"]}</span>
         <img className="my-1" src={question["img"]} />
         {question["video"] ? (
@@ -37,7 +39,6 @@ const Questions = ({ question, qIndex }) => {
           </span>
         ) : null}
       </div>
-
       {question["options"].map((option, index) => (
         <button
           key={index}
