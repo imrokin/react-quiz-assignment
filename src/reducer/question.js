@@ -28,4 +28,11 @@ const questions = [
   }
 ];
 
-export default () => Promise.resolve(questions);
+const questionReducer = (state = [], action) => {
+  switch (action.type) {
+    default:
+      return questions;
+  }
+};
+
+export default questionReducer;

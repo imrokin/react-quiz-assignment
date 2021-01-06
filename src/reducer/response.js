@@ -1,11 +1,9 @@
-const responseReducer = (state = 0, action) => {
+const responseReducer = (state = false, action) => {
   switch (action.type) {
     case "SUBMIT":
       return true;
-    case "RESPONSE":
-      return true;
     default:
-      return true;
+      return false;
   }
 };
 export default responseReducer;
