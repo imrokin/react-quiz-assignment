@@ -1,6 +1,17 @@
-export const questionInit = questions => {
+export const increment = () => {
   return {
-    type: "INIT",
-    payload: questions
+    type: "INCREMENT"
+  };
+};
+
+export const submit = () => {
+  return {
+    type: "SUBMIT"
+  };
+};
+
+export const start = () => {
+  return {
+    type: "START"
   };
 };

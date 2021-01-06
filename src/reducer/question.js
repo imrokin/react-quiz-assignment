@@ -28,7 +28,7 @@ const questions = [
   }
 ];
 
-const questionReducer = (state = [], action) => {
+const questionReducer = (state = questions, action) => {
   switch (action.type) {
     default:
       return questions;
