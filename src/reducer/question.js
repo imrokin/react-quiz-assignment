@@ -2,7 +2,7 @@ const questions = [
   {
     title: "My Name is _______ ?",
     img: "https://via.placeholder.com/350x150",
-    video: "https://vjs.zencdn.net/v/oceans.mp4",
+    video: "",
     explaination: "Some explaination",
     options: ["anand", "tarun", "ankita", "rahul"],
     correct: "tarun",
@@ -20,7 +20,7 @@ const questions = [
   {
     title: "My Nationality is?",
     img: "",
-    video: "https://vjs.zencdn.net/v/oceans.mp4",
+    video: "",
     explaination: "Some explaination",
     options: ["Indian", "African", "American", "Tanzanian"],
     correct: "Indian",

@@ -27,7 +27,9 @@ const Questions = ({ question, qIndex }) => {
       <div className="col-12 d-flex flex-column align-items-start">
         {question["title"]}
         <img className="my-1" src={question["img"]} />
-        <Videojs className="w-100" {...videoJsOptions} />
+        {question["video"] ? (
+          <Videojs className="w-100" {...videoJsOptions} />
+        ) : null}
         {submited ? (
           <span className="alert alert-warning my-1">
             {question["explaination"]}
