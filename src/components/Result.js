@@ -7,8 +7,8 @@ const Result = ({ score }) => {
   const dispatch = useDispatch();
   return (
     <div className="row">
-      <div className="col-12 alert alert-success m-2">
-        {score} correct answers.
+      <div className="col-12 p-2">
+        <div className="alert alert-success">{score} correct answers.</div>
       </div>
       <button
         className="btn btn-success m-2"

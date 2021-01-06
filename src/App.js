@@ -23,10 +23,12 @@ const Quiz = () => {
   }
 
   return (
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-12">{time}s Left</div>
-      </div>
+    <div className="container-fluid card">
+      {submited ? null : (
+        <div className="row">
+          <div className="col-12 d-flex justify-content-end">{time}s Left</div>
+        </div>
+      )}
       {questionBank.length &&
         questionBank.map((question, index) => (
           <Question question={question} qIndex={index} key={index} />
