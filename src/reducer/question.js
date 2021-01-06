@@ -31,7 +31,7 @@ const questions = [
 const questionReducer = (state = questions, action) => {
   switch (action.type) {
     default:
-      return questions;
+      return state;
   }
 };
 

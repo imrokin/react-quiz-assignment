@@ -5,7 +5,7 @@ const scoreReducer = (state = 0, action) => {
     case "START":
       return 0;
     default:
-      return 0;
+      return state;
   }
 };
 export default scoreReducer;

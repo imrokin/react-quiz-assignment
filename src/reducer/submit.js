@@ -5,7 +5,7 @@ const submitReducer = (state = false, action) => {
     case "START":
       return false;
     default:
-      return false;
+      return state;
   }
 };
 export default submitReducer;
