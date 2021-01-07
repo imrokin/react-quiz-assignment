@@ -24,7 +24,11 @@ const Quiz = () => {
 
   return (
     <div className="container-fluid card my-5 py-5">
-      {submited ? null : (
+      {submited ? (
+        <nav className="navbar fixed-top navbar-light bg-light d-flex justify-content-center">
+          <a className="navbar-brand">Quiz Assignment</a>
+        </nav>
+      ) : (
         <nav className="navbar fixed-top navbar-light bg-light d-flex justify-content-center">
           <a className="navbar-brand">Time Left : {time}s</a>
         </nav>

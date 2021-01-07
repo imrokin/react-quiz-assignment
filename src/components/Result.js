@@ -15,7 +15,7 @@ const Result = ({ score }) => {
         </div>
       </div>
       <button
-        className="btn btn-success m-2"
+        className="btn btn-warning m-2 w-100"
         onClick={() => {
           dispatch(start());
         }}
