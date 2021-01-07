@@ -1,32 +1,32 @@
 const questions = [
   {
-    title: "My Name is _______ ?",
-    content: "More Question text",
+    title: "My name is _______ ?",
+    content: "This is optional field for more text content for question",
     img: "https://via.placeholder.com/350x150",
     video: "",
-    explaination: "Some explaination",
-    options: ["anand", "tarun", "ankita", "rahul"],
+    explaination: "Because my name is tarun!",
+    options: ["Anand", "Tarun", "Ankita", "Rahul"],
     correct: "tarun",
     id: "1"
   },
   {
-    title: "I am 30 Years old?",
-    content: "More Question text",
+    title: "I am 30 yrs old?",
+    content: "This is optional field for more text content for question",
     img: "",
     video: "https://vjs.zencdn.net/v/oceans.mp4",
-    explaination: "Some explaination",
-    options: ["true", "false"],
+    explaination: "Yes, I am 30 yrs Old.",
+    options: ["True", "False"],
     correct: "true",
     id: "2"
   },
   {
-    title: "My Nationality is?",
-    content: "More Question text",
+    title: "My nationality is?",
+    content: "This is optional field for more text content for question",
     img: "",
     video: "",
-    explaination: "Some explaination",
+    explaination: "I am Indian by citizenship.",
     options: ["Indian", "African", "American", "Tanzanian"],
-    correct: "Indian",
+    correct: "indian",
     id: "3"
   }
 ];

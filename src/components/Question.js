@@ -44,7 +44,7 @@ const Questions = ({ question, qIndex }) => {
           key={index}
           className="col-2 m-2 btn btn-primary"
           onClick={() => {
-            if (option == question["correct"]) {
+            if (option.toLowerCase() == question["correct"].toLowerCase()) {
               dispatch(increment());
             }
             dispatch(response({ index: qIndex, option: option }));
