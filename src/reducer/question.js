@@ -31,14 +31,14 @@ const questions = [
   }
 ];
 
-const questionReducer = (state = questions, action) => {
+const questionReducer = (state = [...questions], action) => {
   switch (action.type) {
     case "RESPONSE":
-      const newState = [...state];
+      const newState = JSON.parse(JSON.stringify(state));
       newState[action.payload.index].options = [action.payload.option];
       return newState;
     case "START":
-      return questions;
+      return JSON.parse(JSON.stringify(questions));
     default:
       return state;
   }

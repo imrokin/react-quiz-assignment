@@ -25,10 +25,8 @@ const Quiz = () => {
   return (
     <div className="container-fluid card my-5 py-5">
       {submited ? null : (
-        <nav class="navbar fixed-top navbar-light bg-light d-flex justify-content-center">
-          <a class="navbar-brand" href="#">
-            Time Left : {time}s
-          </a>
+        <nav className="navbar fixed-top navbar-light bg-light d-flex justify-content-center">
+          <a className="navbar-brand">Time Left : {time}s</a>
         </nav>
       )}
       {questionBank.length &&
@@ -39,7 +37,7 @@ const Quiz = () => {
       {submited ? (
         <Result score={score} />
       ) : (
-        <nav class="navbar fixed-bottom navbar-light bg-light">
+        <nav className="navbar fixed-bottom navbar-light bg-light">
           <button
             className="btn btn-success w-100 m-2"
             onClick={() => {
