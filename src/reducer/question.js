@@ -30,7 +30,7 @@ const questions = [
     id: "3"
   },
   {
-    title: "Match the following?",
+    title: "Match the following first & last names?",
     content:
       "A. Tarun B.Anand C.Vinayak D.Ankita , 1.Kumar 2.Pandey 3.Tripathi 4.Bhati",
     img: "",
