@@ -15,7 +15,7 @@ const Quiz = () => {
   const time = useSelector(state => state.time);
 
   if (time > 0) {
-    setTimeout(() => dispatch(elapse()), 1000);
+    setTimeout(() => dispatch(elapse(1)), 1000);
   }
 
   if (time == 0) {

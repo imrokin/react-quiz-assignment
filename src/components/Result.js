@@ -8,7 +8,11 @@ const Result = ({ score }) => {
   return (
     <div className="row">
       <div className="col-12 p-2">
-        <div className="alert alert-success">{score} correct answers.</div>
+        <div
+          className={`alert ${score > 0 ? "alert-success" : "alert-danger"}`}
+        >
+          {score} correct answers.
+        </div>
       </div>
       <button
         className="btn btn-success m-2"

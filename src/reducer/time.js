@@ -4,7 +4,7 @@ const time = 60;
 const timeReducer = (state = time, action) => {
   switch (action.type) {
     case "ELAPSE":
-      return state - 1;
+      return state - action.payload;
     case "START":
       return time;
     default:
