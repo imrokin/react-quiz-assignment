@@ -10,6 +10,7 @@ const Questions = ({ question, qIndex }) => {
 
   const videoJsOptions = {
     autoplay: false,
+    responsive: true,
     playbackRates: [0.5, 1, 1.25, 1.5, 2],
     width: 400,
     height: 200,
