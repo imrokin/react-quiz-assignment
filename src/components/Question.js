@@ -31,7 +31,11 @@ const Questions = ({ question, qIndex }) => {
         <span>{question["content"]}</span>
         <img className="my-1" src={question["img"]} />
         {question["video"] ? (
-          <Videojs className="w-100" {...videoJsOptions} />
+          <div className="row">
+            <div className="col-4">
+              <Videojs className="w-100" {...videoJsOptions} />
+            </div>
+          </div>
         ) : null}
         {submited ? (
           <span className="alert alert-warning my-1">
