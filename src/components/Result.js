@@ -6,14 +6,15 @@ import { start } from "../actions";
 const Result = ({ score }) => {
   const dispatch = useDispatch();
   return (
-    <div className="row">
-      <div className="col-12 p-2">
-        <div
-          className={`alert ${score > 0 ? "alert-success" : "alert-danger"}`}
-        >
-          {score} correct answers.
-        </div>
+    <nav className="navbar fixed-bottom navbar-light bg-light">
+      <div
+        className={`alert w-100 ${
+          score > 0 ? "alert-success" : "alert-danger"
+        }`}
+      >
+        {score} correct answers.
       </div>
+
       <button
         className="btn btn-warning m-2 w-100"
         onClick={() => {
@@ -22,7 +23,7 @@ const Result = ({ score }) => {
       >
         Start Again
       </button>
-    </div>
+    </nav>
   );
 };
 

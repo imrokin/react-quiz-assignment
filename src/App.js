@@ -30,7 +30,9 @@ const Quiz = () => {
         </nav>
       ) : (
         <nav className="navbar fixed-top navbar-light bg-light d-flex justify-content-center">
-          <a className="navbar-brand">Time Left : {time}s</a>
+          <a className={`navbar-brand ${time < 10 ? "text-danger" : ""}`}>
+            Time Left : {time}s
+          </a>
         </nav>
       )}
       {questionBank.length &&

@@ -23,7 +23,7 @@ const Questions = ({ question, qIndex }) => {
   };
 
   return (
-    <div className="row  p-2 border-bottom">
+    <div className="row  p-2 border-bottom my-5">
       <div className="col-12 d-flex flex-column align-items-start ">
         <h4>
           Q {qIndex + 1}. {question["title"]}
