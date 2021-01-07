@@ -28,6 +28,23 @@ const questions = [
     options: ["Indian", "African", "American", "Tanzanian"],
     correct: "indian",
     id: "3"
+  },
+  {
+    title: "Match the following?",
+    content:
+      "A. Tarun B.Anand C.Vinayak D.Ankita , 1.Kumar 2.Pandey 3.Tripathi 4.Bhati",
+    img: "",
+    video: "",
+    explaination:
+      "Tarun Bhati , Anand Kumar , Vinayak Tripathi , Ankita Pandey",
+    options: [
+      "A-4,B-1,C-3,D-2",
+      "A-1,B-2,C-3,D-4",
+      "A-2,B-3,C-4,D-1",
+      "A-3,B-2,C-1,D-4"
+    ],
+    correct: "A-4,B-1,C-3,D-2",
+    id: "3"
   }
 ];
 
